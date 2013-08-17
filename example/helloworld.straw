@@ -1,0 +1,11 @@
+require 'crazystraw'
+
+straw do
+  cluster do
+    host name: :localhost, port: 22
+  end
+
+  # task(cluster) do
+  #   command %q{echo "hello world" | wc -c | sed -e "s/[ ]//g"}
+  # end
+end

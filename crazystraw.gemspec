@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Crazystraw::VERSION
   spec.authors       = ["Paul Bergeron"]
   spec.email         = ["paul.d.bergeron@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Map/Reduce using *nix tools}
+  spec.summary       = %q{Map/Reduce using *nix tools}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "pry"
+
+  spec.add_dependency "trollop", "~> 2.0"
+  spec.add_dependency "docile", "~> 1.1.0"
 end

@@ -24,6 +24,17 @@ Or install it yourself as:
 
     $ crazystraw task.straw
 
+
+## Example task:
+
+cluster do
+  host name: :localhost, port: 22
+end
+
+task(cluster) do
+  command %q{echo "hello world" | wc -c | sed -e "s/[ ]//g"}
+end
+
 ## Contributing
 
 1. Fork it
