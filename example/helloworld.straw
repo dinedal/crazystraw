@@ -5,7 +5,9 @@ straw do
     host name: :localhost, port: 22
   end
 
-  # task(cluster) do
-  #   command %q{echo "hello world" | wc -c | sed -e "s/[ ]//g"}
-  # end
+  task do
+    command %q{echo "hello world"}
+    command %q{wc -c}
+    command %q{sed -e "s/[ ]//g"}
+  end
 end
